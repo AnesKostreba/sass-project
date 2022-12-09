@@ -1,0 +1,132 @@
+@mixin logo {
+    color: #FF9801;
+    padding: 3px;
+    border-top: 5px solid #6D6D6D;
+    border-bottom: 5px solid #6D6D6D;
+    border-left: 5px solid #6D6D6D;
+}
+
+@mixin h1ForTabletAndDesktop {
+    h1 {
+        text-align: center;
+        padding: 2%;
+        padding-top: 3%;
+        margin-top: 0;
+        color: $colorWhite;
+
+        span {
+            border-color: #fff;
+        }
+    }
+}
+
+@mixin navForMobile {
+    nav a {
+        text-decoration: none;
+        margin: 2%;
+        color: #fff;
+        font-family: Roboto-bold;
+    }
+
+    nav {
+        justify-content: center;
+        align-items: center;
+        background-color: #7FC2F7;
+        ;
+        padding: 2%;
+        margin: 0 3% 0 3%;
+    }
+}
+
+@mixin nav {
+    nav {
+        float: right;
+        margin-top: 3.5%;
+        margin-right: 5%;
+
+        a {
+            font-family: Roboto-bold;
+            color: $colorWhite;
+            text-decoration: none;
+            margin-right: 25px;
+        }
+    }
+
+    .button {
+        text-align: center;
+    }
+}
+
+@mixin headerBack {
+    background-image: url(images/banner3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+@mixin button {
+    border: none;
+    margin-bottom: 15%;
+    background-color: #146EB4;
+    padding: 1.5%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.8rem;
+    border-radius: 12px;
+}
+
+@mixin decoration {
+    .decoration {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .first {
+        flex-basis: 10%;
+        border: 0.3px solid black;
+    }
+
+    .secound {
+        width: 15px;
+        height: 15px;
+        padding: 0;
+        transform: rotate(45deg);
+        margin: 0px 7px 0px 7px;
+        border: 0.3px solid black;
+    }
+
+    .third {
+        flex-basis: 10%;
+        border: 0.3px solid black;
+    }
+}
+
+@mixin footer {
+    footer {
+        background-color: #212121;
+        padding: 5%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    footer a {
+        display: inline-flex;
+
+        color: #fff;
+        text-decoration: none;
+        margin: 1%;
+        font-size: smaller;
+    }
+
+    footer p {
+        color: #fff;
+        text-align: center;
+        font-size: small;
+    }
+
+    footer .footer p {
+        color: #fff;
+        text-align: center;
+    }
+}
